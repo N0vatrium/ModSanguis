@@ -1,4 +1,4 @@
-# At the time of writing the game is not even in early access, please don't report bugs to the devs is you use this mod
+# At the time of writing the game is not even in early access, please don't report bugs to the devs if you use this mod
 
 # ModSanguis - HF Csl
 
@@ -23,3 +23,7 @@ If you already installed BepInEx for Ex Sanguis skip to step 5
 3. Start the game without any mods, wait for it to generate the files
 4. Once loaded in the main menu close the game
 5. [Get the DLLs](https://github.com/N0vatrium/ModSanguis/releases) and move them to BepInEx/plugins
+
+
+## Technical note
+If a dev is looking at this: there might be a bug with EntityGameplayAbilityComponent, the constructor is called twice when the combat starts
