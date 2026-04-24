@@ -11,6 +11,8 @@ The current goal is to implement fun ideas as a way to familiarize myself with t
 **Nerfed healing**: you only heal half of you missing HP after a fight
 
 ## Known bugs
+I'm currently using absolute values for the HP instead of percentage, meaning that if you increase your max HP between 2 fights the result might be off. This is a quick fix that I intend to implement ASAP
+
 At the moment the healing is tied to the character name, I'm not sure yet if the IDs I found are stable, so don't use the same name multiple times
 
 Also there is no persistence yet so you can cheese it by saving and reloading out of combat to clear the saved values
