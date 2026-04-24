@@ -4,7 +4,7 @@
     <TargetFramework>net471</TargetFramework>
     <AssemblyName>ModSanguis</AssemblyName>
     <Product>HF Csl</Product>
-    <Version>1.0.1</Version>
+    <Version>1.1.0</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
     <RestoreAdditionalProjectSources>
@@ -27,6 +27,10 @@
   </ItemGroup>
   
   <ItemGroup>
+    <Reference Include="Argon.UI">
+      <HintPath>..\..\..\Ex Sanguis_Data\Managed\Argon.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\Ex Sanguis_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -61,6 +65,10 @@
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\Ex Sanguis_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Ex Sanguis_Data\Managed\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>

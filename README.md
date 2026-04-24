@@ -6,13 +6,12 @@ This is a quick mod the game [Ex Sanguis](https://store.steampowered.com/app/327
 
 The current goal is to implement fun ideas as a way to familiarize myself with the codebase
 
-## Feature(s)
+## Features
 
-**Nerfed healing**: you only heal half of you missing HP after a fight
+**Nerfed healing**: you only heal half of your missing HP after a fight (value can be changed in the configs)
+**Bravery**: you can't choose your talents, instead they are randomly picked (value can be changed in the configs, disabled by default)
 
 ## Known bugs
-I'm currently using absolute values for the HP instead of percentage, meaning that if you increase your max HP between 2 fights the result might be off. This is a quick fix that I intend to implement ASAP
-
 At the moment the healing is tied to the character name, I'm not sure yet if the IDs I found are stable, so don't use the same name multiple times
 
 Also there is no persistence yet so you can cheese it by saving and reloading out of combat to clear the saved values
@@ -36,4 +35,6 @@ If you already installed BepInEx for Ex Sanguis skip to step 5
 
 
 ## Technical note
-If a dev is looking at this: there might be a bug with EntityGameplayAbilityComponent, the constructor is called twice when the combat starts
+If a dev is looking at this: there might be a bug with EntityGameplayAbilityComponent, the constructor is called twice when the combat starts  
+
+Also I disabled the analytics to avoid messing with your stats
