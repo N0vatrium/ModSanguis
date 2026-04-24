@@ -26,6 +26,14 @@ If you already installed BepInEx for Ex Sanguis skip to step 5
 4. Once loaded in the main menu close the game
 5. [Get the DLLs](https://github.com/N0vatrium/ModSanguis/releases) and move them to BepInEx/plugins
 
+## Config
+
+1. Install the mod, run the game once then close it
+2. Edit the file located in bepinex's config folder (ex C:\Program Files (x86)\Steam\steamapps\common\Ex Sanguis Playtest\BepInEx\config)
+3. Save it
+4. Launch the game
+5. Config reloading will be added at a later time, until then you need to restart the game to apply them
+
 
 ## Technical note
 If a dev is looking at this: there might be a bug with EntityGameplayAbilityComponent, the constructor is called twice when the combat starts
