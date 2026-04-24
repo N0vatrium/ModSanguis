@@ -17,6 +17,7 @@ namespace ModSanguis
         {
             // Plugin startup logic
             Logger = base.Logger;
+            PluginConfig.Init(Config);
 
             var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
 

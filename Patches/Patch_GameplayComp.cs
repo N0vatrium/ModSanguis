@@ -16,16 +16,15 @@ namespace ModSanguis.Patches
             var name = __instance.Name;
             if (HealthPools.ContainsKey(name))
             {
-                Helpers.WriteLog("Loading player "+ __instance.Name + " from the pools with " + HealthPools[name]);
 
-                var health = HealthPools[name];
-                var maxHealth = __instance.AttributeSet.GetValue(GameAttributes.MAX_HEALTH);
+                var percent = HealthPools[name];
+                var maxHealth = __instance.GetAttributeWithModifiers(GameAttributes.MAX_HEALTH);
 
-                // half of missing health
-                var half = (maxHealth - health) /2 ;
-                Helpers.WriteLog("Half is " + half);
 
-                __instance.AttributeSet.Set(GameAttributes.CURRENT_HEALTH, health + half);
+                var newHealth = maxHealth * percent;
+                __instance.SetAttribute(GameAttributes.CURRENT_HEALTH, newHealth);
+
+                Helpers.WriteLog("Loaded player " + name + " from the pools with " + newHealth);
             }
         }
     }
