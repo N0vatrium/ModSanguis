@@ -9,7 +9,9 @@ The current goal is to implement fun ideas as a way to familiarize myself with t
 ## Features
 
 **Nerfed healing**: you only heal half of your missing HP after a fight (value can be changed in the configs)
-**Bravery**: you can't choose your talents, instead they are randomly picked (value can be changed in the configs, disabled by default)
+**Bravery**: you can't choose your talents, instead they are randomly picked (value can be changed in the configs, disabled by default)  
+
+**Randomizer (UNSTABLE)**: any entity will get its abilities swapped out for random ones, same amount, reset each fight (value can be changed in the configs, disabled by default)
 
 ## Known bugs
 At the moment the healing is tied to the character name, I'm not sure yet if the IDs I found are stable, so don't use the same name multiple times
